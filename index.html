@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta name="description" content="Enthusia is an open-source social community creation platform for fandoms, groups, and more that's easy to set up and use.">
+  <title>Enthusia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.micahlindley.com/blurbs/reset.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <alert class="topleft">We're looking for contributors! Contact us on <a href="https://github.com/micahlt/enthusia">GitHub</a>!</alert>
+  <div class="nav">
+    <a href="#"><img src="e.svg" class="nav-img"></a>
+  </div>
+  <div class="header">
+    <div class="header-content">
+      <h1 class="title">Enthusia</h1>
+      <p class="subtitle">Self-hosted, open-source, easy to set up social communities<br><br></p>
+      <div class="buttons">
+        <span class="hero-bg"><a href="#start" class="hero-button">GET STARTED</a></span><a href="#" class="secondary-button">DOCS</a>
+      </div>
+    </div>
+  </div>
+  <div class="start" id="start">
+    <div class="start-content">
+      <h2 class="heading">Get started with just one line of code.<br><br></h2>
+      <code>$ npm install --save-dev enthusia-setup <a href="javascript:copy()" id="copy"><span class="material-icons">
+            file_copy
+          </span><a></code>
+      <br><br>
+    </div>
+  </div>
+  <input id="input" type="text" />
+  <script type="text/javascript">
+    document.getElementById("input").value = "npm install --save-dev enthusia-setup";
+
+    function copy() {
+      var copyText = document.querySelector("#input");
+      copyText.select(0, 9999);
+      document.execCommand("copy");
+      console.log("copied" + document.getElementById('input').value);
+    };
+  </script>
+</body>
+
+</html>
