@@ -1,0 +1,124 @@
+* {
+  transition: 0.26s;
+}
+
+:root {
+  --color-primary: #177ce7;
+  --color-secondary: #4528d2;
+  --color-tertiary: #ffffff;
+  --font-para: 'Manrope', sans-serif;
+  --font-head: 'Manrope', sans-serif;
+}
+
+.enthuse-navbar {
+  background: -moz-linear-gradient(-45deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.enthuse-navbar .enthuse-logo {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 50px;
+}
+
+.enthuse-navbar .enthuse-logo:hover {
+  filter: brightness(0);
+  -webkit-filter: brightness(0);
+  -moz-filter: brightness(0);
+  -ms-filter: brightness(0);
+}
+
+.enthuse-navlinks {
+  font-family: var(--font-para);
+  text-align: right;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+.enthuse-navlinks a {
+  color: var(--color-tertiary);
+  text-decoration: none;
+  padding-right: 25px;
+}
+
+.enthuse-navlinks a:hover {
+  color: black;
+}
+
+.enthuse-main {
+  transform: translateY(48px);
+  height: 90vh;
+}
+
+.enthuse-banner-join {
+  background-image: url('https://images.unsplash.com/photo-1588097199417-f96cf73b6b75');
+  background-size: cover;
+  height: 30vh;
+}
+
+.enthuse-banner-join .enthuse-banner-title {
+  font-family: var(--font-head);
+  font-weight: bold;
+  color: white;
+}
+
+.enthuse-banner-content {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.enthuse-banner-signin-google {
+  background: #ffffff;
+  padding: 15px;
+  color: black;
+  font-family: 'Roboto';
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.enthuse-banner-signin-google:hover {
+  box-shadow: 0 3px 7px black;
+  background: #d2d2d2;
+}
+
+.enthuse-banner-signin-google i {
+  font-size: 25px;
+  transform: translate(-3px, 3.5px);
+}
+
+.enthuse-terms {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+.enthuse-terms a {
+  color: white;
+}
+
+.enthuse-content {
+  position: absolute;
+  top: 30vh;
+  background-color: var(--color-tertiary);
+  height: 100vh;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  width: 70vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.enthuse-content-padding {
+  margin: 20px;
+  height: 100vh;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="description" content="Test out how Enthusia works before you establish your own community!">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta charset="utf-8">
+  <title>Enthusia ~ Sandbox</title>
+  <link rel="stylesheet" href="https://cdn.micahlindley.com/blurbs/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home-layout.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <script src="https://kit.fontawesome.com/c425311c1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="enthuse-navbar">
+    <a href="#"><img class="enthuse-logo" src="../e.svg"></a>
+    <div class="enthuse-navlinks">
+      <a href="#">About</a>
+      <a href="#" id="enthuse-signedin" alt="Sign In"></a>
+    </div>
+    <div class="enthuse-main">
+      <div class="enthuse-banner-join">
+        <div class="enthuse-banner-content">
+          <h1 class="enthuse-banner-title">You're not a member of this community.</h1><br><br>
+          <a href="#" class="enthuse-banner-signin-google"><i class="fab fa-google"></i> Sign In With Google</a><br><br><br>
+          <p class="enthuse-terms">By clicking the button, you agree to the <a href="https://micahlindley.com/enthusia/terms.html">Terms and Conditions</a></p>
+        </div>
+      </div>
+      <div class="enthuse-content">
+        <div class="enthuse-content-padding">
+          <div class="enthuse-welcome-message">
+          </div>
+        </div>
+      </div>
+      <div class="enthuse-user-panel">
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyC4aBMRbI5lTCaAy0DGYFmWjhOCnymUnF4",
+        authDomain: "enthusia-demo.firebaseapp.com",
+        databaseURL: "https://enthusia-demo.firebaseio.com",
+        projectId: "enthusia-demo",
+        storageBucket: "enthusia-demo.appspot.com",
+        messagingSenderId: "526103822336",
+        appId: "1:526103822336:web:4bcc9e7789357722a318e5",
+        measurementId: "G-6FBKV733LS"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="js/home.js" charset="utf-8"></script>
+</body>
+
+</html>
